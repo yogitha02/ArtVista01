@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ArtVista</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  
+
+<div class="container">
+    <div class="index-container">
+      <div class="index-container1">
+        <h1>Welcome to ArtVista</h1>
+        <h4>Explore Art, Unleash Imagination</h4>
+        <p>ArtVista opens up new avenues for art lovers to immerse themselves in the beauty and richness of art, expanding their horizons and inspiring their imagination.</p>
+        <div class="options">
+            <button class="btn" onclick="showLogin()">Log In</button>
+            <button class="btn" onclick="showSignup()">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-container" id="formContainer">
+      <div class="form-container1">
+        <div id="loginForm">
+            <h1>Welcome Back! Login</h1>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder=" Email" required><br>
+                <input type="password" name="password" placeholder=" Password" required><br>
+                <button type="submit" class="btn">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+        </div>
+        
+        <div id="signupForm" style="display: none;">
+            <h1>Create an Account</h1>
+            <form action="/signup" method="POST">
+                <input type="text" name="name" placeholder=" Full Name" required><br>
+                <input type="email" name="email" placeholder=" Email" required><br>
+                <input type="password" name="password" placeholder=" Password" required><br>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Log In</a></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script src="/public/js/script.js"></script>
+
+</body>
+</html>

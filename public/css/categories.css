@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background-color: #c7742b;
+    padding: 8px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin: 0.5rem 1.5rem;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .search-bar {
+    width: 220px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    border-width: 0 0 2px 0;
+    border-color: white;
+    /* border: none; */
+    outline: none;
+  }
+
+  .search{
+   display: flex;
+   flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.74); /* Replace with your desired font color */
+
+  }
+
+  .categories{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    /* background-color:#f3c59e; */
+    padding: 10px 10px 2px 10px;
+    border-color: #c7742b;
+    border-radius: 6px;
+    background-color: transparent;
+
+  }
+
+  .cate{
+    padding: 0 30px;
+    color: #c8854b;
+    font-size: 1.1rem;
+   text-decoration: none;
+   font-weight: 500;
+  }
+
+  .cate:active{
+    color: #c8854b;
+  }
+
+  .tee{
+    border: 1px solid #c8854b;
+    margin: 9px;
+  }
+
+  .subcategory1{
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+  padding: 4px 14px;
+  flex-wrap: wrap;
+  }
+
+  .subcategory1 h3{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .card{
+    margin: 20px;
+  }
